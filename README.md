@@ -53,7 +53,7 @@ Menu Toggle: Opens and closes the mobile navigation menu.
 
 Live Demo
 
-To see a live version, deploy the project on a hosting platform such as Netlify or GitHub Pages.
+To see a live version, visit: https://noahnalh.github.io/Portfolio/
 
 License
 
