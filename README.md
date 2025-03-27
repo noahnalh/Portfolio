@@ -30,10 +30,10 @@ FontAwesome - Icons for UI elements
 
 File Structure
 
-├── images/                  # Contains all images used in the website
-├── style.css                # Stylesheet for the website
-├── index.html               # Main HTML file
-├── README.md                # Documentation for the project
+├── images/ # Contains all images used in the website
+├── style.css # Stylesheet for the website
+├── index.html # Main HTML file
+├── README.md # Documentation for the project
 
 How to Use
 
