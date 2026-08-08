@@ -26,6 +26,17 @@ if (apexCard) {
     apexLink.setAttribute('aria-label', 'View Apex Studio project');
 }
 
+document.querySelectorAll('.work-card:not(.work-card-large)').forEach((card) => {
+    const metaLink = card.querySelector('.work-meta > a');
+    const image = card.querySelector('.work-image img');
+    const index = card.querySelector('.work-index');
+    if (!metaLink || !image || !index) return;
+    const href = metaLink.href;
+    const label = metaLink.getAttribute('aria-label') || 'Open project';
+    card.querySelector('.work-image').innerHTML = `<a class="preview-link" href="${href}" target="_blank" rel="noopener noreferrer" aria-label="${label}"><img src="${image.getAttribute('src')}" alt="${image.alt}"></a>${index.outerHTML}`;
+    metaLink.remove();
+});
+
 menuToggle?.addEventListener('click', () => {
     const isOpen = siteMenu.classList.toggle('is-open');
     menuToggle.setAttribute('aria-expanded', String(isOpen));
