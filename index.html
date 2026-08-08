@@ -1,250 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Noah Nalh is a Kenyan UI/UX designer and full-stack developer building thoughtful digital products.">
+    <title>Noah Nalh | Digital designer & developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9b59fbcfae.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
 </head>
-
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.png" alt="logo" class="logo" />
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-solid fa-circle-xmark" onclick=" closemenu()"></i>
-                </ul>
-                <i class="fas fa-solid fa-bars" onclick=" openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1>
-                    Hi, I'm <span>Noah</span><br />
-                    From Kenya
-                </h1>
+    <header class="site-header" id="home">
+        <nav class="nav container" aria-label="Primary navigation">
+            <a class="brand" href="#home" aria-label="Noah Nalh home">NN<span>.</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+            <ul class="site-menu" id="site-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Selected work</a></li>
+                <li><a class="nav-contact" href="#contact">Let's talk <span>↗</span></a></li>
+            </ul>
+        </nav>
+        <div class="hero container">
+            <div class="hero-copy">
+                <p class="eyebrow"><span></span> Available for select projects · Nairobi, KE</p>
+                <h1>Digital experiences with <em>character.</em></h1>
+                <p class="hero-intro">I’m Noah, a designer and developer turning complex ideas into clear, memorable products for the web.</p>
+                <div class="hero-actions"><a class="button button-dark" href="#work">Explore my work <span>↘</span></a><a class="text-link" href="#contact">Start a conversation <span>↗</span></a></div>
+            </div>
+            <div class="hero-art" aria-label="Abstract portrait composition">
+                <div class="hero-sticker">Design<br>with intent<br><span>✦</span></div>
+                <img src="images/user.jpg" alt="Noah Nalh">
+                <div class="hero-orbit">UI/UX · WEB · APPS</div>
             </div>
         </div>
-    </div>
-    <!-- ---About Section---  -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.jpg" alt="" />
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>
-                        I'm Noah, a junior web developer with a passion for crafting
-                        beautiful, responsive websites that deliver seamless user
-                        experiences. I love blending creativity with technology, ensuring
-                        that every project is both visually engaging and highly
-                        functional. When I'm not coding, you'll find me immersed in
-                        comics, drawing inspiration from their storytelling, artwork, and
-                        unique designs. Whether it’s building intuitive interfaces or
-                        experimenting with new web technologies, I’m always looking for
-                        ways to push the boundaries of digital creativity.
-                    </p>
+        <div class="hero-footer container"><span>01 — Intro</span><span class="scroll-line"></span><span>Scroll to explore</span></div>
+    </header>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skils')">
-                            Skills
-                        </p>
-                        <p class="tab-links" onclick="opentab('experience')">
-                            Experience
-                        </p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br />Designing Web/App interfaces with HTML, CSS and javascript</li>
-                            <li><span>Web Development</span><br />Web/App Development</li>
-                            <li>
-                                <span>App Development</span><br />Building Android/iOS apps
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li>
-                                <span>2018 - 2020</span><br />Responsive Web Design at
-                                freeCodecamp
-                            </li>
-                            <li>
-                                <span>2021 - Current</span><br />Website Developer and Web
-                                manager at SoringeSprings
-                            </li>
-                            <li><span>2024</span><br />Internship at Safaricom</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2020</span><br />Front-End Engineer at CodeCademy</li>
-                            <li><span>2023</span><br />UX/UI Design at Moringa School</li>
-                            <li>
-                                <span>2025</span><br />Full Stack Software Engineering
-                                Bootcamp at Moringa School
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ---Services Section---  -->
+    <main>
+        <section class="section about container" id="about">
+            <div class="section-label">01 / About</div>
+            <div class="about-content"><div><p class="section-kicker">A developer with a designer's eye</p><h2>I make the digital feel <em>human.</em></h2></div><div class="about-copy"><p>I’m a junior web developer who cares about the small details that make a product feel effortless. I blend visual thinking with practical front-end craft to build work that is useful, responsive and a little unexpected.</p><p>When I’m not at my desk, I’m probably reading comics, collecting visual references or exploring the next tool worth learning.</p></div></div>
+            <div class="tab-shell"><div class="tab-titles" role="tablist" aria-label="About Noah"><button class="tab-link active-link" role="tab" aria-selected="true" aria-controls="skills" data-tab="skills">Capabilities</button><button class="tab-link" role="tab" aria-selected="false" aria-controls="experience" data-tab="experience">Experience</button><button class="tab-link" role="tab" aria-selected="false" aria-controls="education" data-tab="education">Learning</button></div><div class="tab-contents active-tab" id="skills" role="tabpanel"><span>01</span><p>UI/UX design<br><strong>Interfaces that make sense.</strong></p><span>02</span><p>Web development<br><strong>Fast, accessible, responsive.</strong></p><span>03</span><p>Product thinking<br><strong>Ideas shaped into outcomes.</strong></p></div><div class="tab-contents" id="experience" role="tabpanel"><span>2021 — now</span><p>Website developer & manager<br><strong>Building and maintaining digital experiences.</strong></p><span>2024</span><p>Safaricom internship<br><strong>Learning at scale.</strong></p></div><div class="tab-contents" id="education" role="tabpanel"><span>2025</span><p>Moringa School<br><strong>Full-stack software engineering.</strong></p><span>2023</span><p>Moringa School<br><strong>UX/UI design.</strong></p></div></div>
+        </section>
 
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>
-                        I provide professional web development services, crafting responsive, high-performing websites
-                        and custom solutions
-                        tailored to your needs. Whether you need a business site, e-commerce platform, or web
-                        application, I ensure a seamless,
-                        user-friendly experience that enhances your online presence.
-                    </p>
-                    <a href="#">Learn More </a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX</h2>
-                    <p>
-                        I design user-friendly and visually appealing interfaces that make digital experiences smooth
-                        and engaging. From
-                        wireframes to final design, I focus on clarity, usability, and aesthetics.
-                    </p>
-                    <a href="#">Learn More </a>
+        <section class="section services" id="services"><div class="container"><div class="section-label">02 / What I do</div><div class="services-heading"><h2>Useful by design.<br><em>Distinct by default.</em></h2><p>From first sketch to final build, I bring clarity to every layer of the experience.</p></div><div class="services-list"><article><span class="service-number">01</span><i class="fa-solid fa-compass-drafting"></i><h3>Product & UI design</h3><p>Visual systems, wireframes and interfaces that give good ideas a clear direction.</p><a href="#contact">Work together <span>↗</span></a></article><article><span class="service-number">02</span><i class="fa-solid fa-code"></i><h3>Web development</h3><p>Responsive, accessible websites with the performance and polish users notice.</p><a href="#contact">Work together <span>↗</span></a></article><article><span class="service-number">03</span><i class="fa-solid fa-layer-group"></i><h3>Digital products</h3><p>Thoughtful front-end builds that turn a product story into a smooth daily tool.</p><a href="#contact">Work together <span>↗</span></a></article></div></div></section>
 
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>
-                        I design intuitive and visually appealing apps that offer seamless user experiences. From
-                        concept to final design, I
-                        focus on usability, functionality, and aesthetics to create engaging mobile and web
-                        applications.
-                    </p>
-                    <a href="#">Learn More </a>
+        <section class="section work container" id="work"><div class="section-label">03 / Selected work</div><div class="work-heading"><h2>A few things<br><em>I’ve made.</em></h2><p>A current product build, a hospitality experience and a fintech concept, arranged from newest to foundational.</p></div><div class="work-list"><article class="work-card work-card-large"><div class="work-image orbit-preview" role="img" aria-label="Code Orbit workspace dashboard preview"><div class="orbit-shell"><aside><strong>orbit</strong><span class="orbit-avatar">AK</span><div class="orbit-side active">▦ &nbsp; Overview</div><div class="orbit-side">▤ &nbsp; Repositories</div><div class="orbit-side">↗ &nbsp; Pull requests <b>8</b></div><div class="orbit-side">◌ &nbsp; Activity</div><small>Workspace</small><div class="orbit-side">⚙ &nbsp; Settings</div></aside><div class="orbit-main"><div class="orbit-topbar"><span>Acme / Studio &nbsp; / &nbsp; <b>Overview</b></span><span class="orbit-action">＋ New repository</span></div><div class="orbit-welcome"><small>WEDNESDAY, SEPTEMBER 18, 2024</small><h4>Good morning, Alex <i>✦</i></h4><p>Here's what's happening across your workspace.</p></div><div class="orbit-metrics"><div><small>Contribution score</small><strong>84<span>/100</span></strong><em>+12.5% vs last month</em></div><div><small>Commits</small><strong>247</strong><em>Across 6 repositories</em></div><div><small>Pull requests</small><strong>32</strong><em>20 merged · 7 open</em></div></div><div class="orbit-lower"><div><small>YOUR REPOSITORIES</small><div class="orbit-row"><b>◈ &nbsp; atlas-ui</b><span>Building</span></div><div class="orbit-row"><b>◈ &nbsp; signal-api</b><span>Healthy</span></div><div class="orbit-row"><b>◈ &nbsp; orbit-docs</b><span>Updated</span></div></div><div><small>ACTIVITY</small><div class="orbit-activity">Maya Chen merged a pull request <span>12m</span></div><div class="orbit-activity">Jordan Reed opened an issue <span>34m</span></div><div class="orbit-activity">Sam Patel pushed 4 commits <span>1h</span></div></div></div></div></div><span class="work-index">01 / Featured</span></div><div class="work-meta"><div><p class="project-type">Product design · Web app</p><h3>Code Orbit</h3></div><a href="https://code-orbit-three.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Code Orbit project">↗</a></div></article><article class="work-card"><div class="work-image"><img src="images/work-1.png" alt="Gericht restaurant website preview"><span class="work-index">02 / 03</span></div><div class="work-meta"><div><p class="project-type">Web design · Development</p><h3>Gericht Restaurant</h3></div><a href="https://www.gerichtrestaurant.site/" target="_blank" rel="noopener noreferrer" aria-label="View Gericht Restaurant project">↗</a></div></article><article class="work-card"><div class="work-image"><img src="images/work-3.png" alt="HooBank banking app preview"><span class="work-index">03 / 03</span></div><div class="work-meta"><div><p class="project-type">React · Fintech</p><h3>HooBank</h3></div><a href="https://myreactbank.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="View HooBank project">↗</a></div></article></div></section>
 
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ---Portfolio Section---  -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png" alt="">
-                    <div class="layer">
-                        <h3>Restaurant</h3>
-                        <p>A website for a fiction website called, The Gericht Restaurant, the website features a modern
-                            design, detailed menu, online reservations, customer reviews, and easy
-                            navigation for a seamless dining experience.</p>
-                        <a href="https://www.gerichtrestaurant.site/"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png" alt="">
-                    <div class="layer">
-                        <h3>Gpt3-Ai Website</h3>
-                        <p>Made a webite for a fictional website that shows alll the cool features of Gpt3-Ai. The
-                            MyGPT3 website is a React-based app integrating OpenAI's GPT-3 for interactive AI responses,
-                            featuring a modern
-                            design and smooth user experience. </p>
-                        <a href="https://mygpt3.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="">
-                    <div class="layer">
-                        <h3>Banking app</h3>
-                        <p>A fictional bank website. The HooBank website offers a modern platform for financial
-                            management, featuring expense tracking, invoicing, secure
-                            transactions, and credit card insights. </p>
-                        <a href="https://myreactbank.netlify.app/"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn">See More</a>
-        </div>
-    </div>
-
-    <!-- ---Contact Section---  -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>noahnalh@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+254798707034</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="images/Noah-cv.pdf" download="" class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form>
-                        <input type="text" name="name" id="" placeholder="Your Name" required>
-                        <input type="email" name="email" id="" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy Copyright © Noah. Made with <i class="fa-solid fa-heart"></i> by Noah</p>
-        </div>
-    </div>
-
-    <!-- ---Scipt Section---  -->
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-    </script>
+        <section class="contact section" id="contact"><div class="container contact-grid"><div><div class="section-label">04 / Contact</div><h2>Have a good idea?<br><em>Let’s make it real.</em></h2><p class="contact-note">Tell me a little about what you’re building. I’ll get back to you within a few days.</p><div class="contact-details"><a href="mailto:noahnalh@gmail.com">noahnalh@gmail.com <span>↗</span></a><a href="tel:+254798707034">+254 798 707 034 <span>↗</span></a></div><a class="button button-light" href="images/Noah-cv.pdf" download>Download my CV <span>↓</span></a></div><form class="contact-form"><label>Your name<input type="text" name="name" placeholder="Jane Doe" required></label><label>Email address<input type="email" name="email" placeholder="jane@company.com" required></label><label>Tell me about it<textarea name="message" rows="4" placeholder="A few words about your project..." required></textarea></label><button class="button button-accent" type="submit">Send enquiry <span>↗</span></button><p class="form-status" role="status" aria-live="polite"></p></form></div></section>
+    </main>
+    <footer class="footer container"><a class="brand" href="#home">NN<span>.</span></a><p>Designed & built by Noah Nalh · 2025</p><div><a href="#about">Back to top ↑</a></div></footer>
 </body>
-
 </html>

@@ -63,6 +63,29 @@ Contact
 
 For any inquiries or collaboration opportunities, feel free to reach out:
 
-Email: noahnalh@gmail.com
+# Noah Nalh Portfolio
 
-Phone: +254798707034
+A responsive portfolio for Noah Nalh, a Kenyan UI/UX designer and web developer. The site uses a bold editorial visual system with warm paper tones, ink-black sections, a lime highlight, and orange accents.
+
+## Features
+
+- Responsive desktop and mobile layout
+- Accessible mobile navigation with keyboard-friendly controls
+- About tabs for capabilities, experience, and learning
+- Project showcase with live links
+- Contact form with client-side feedback
+- Downloadable CV
+- Reduced-motion support
+
+## Stack
+
+- Semantic HTML5
+- CSS3 with responsive layout and custom properties
+- Vanilla JavaScript in `app.js`
+- Font Awesome icons and Google Fonts
+
+## Run locally
+
+Open `index.html` in a browser, or serve the folder with any static server. No build step or package installation is required.
+
+The contact form currently provides local submission feedback. Connect it to a form service or backend endpoint before deploying if you need to receive submissions.
