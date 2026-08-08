@@ -5,6 +5,8 @@ const tabContents = document.querySelectorAll('.tab-contents');
 const contactForm = document.querySelector('.contact-form');
 const formStatus = document.querySelector('.form-status');
 
+document.querySelector('.work-heading p')?.replaceChildren(document.createTextNode('A product workspace, a digital studio, and a fintech concept, arranged as equal visual studies.'));
+
 const orbitCard = document.querySelector('.work-card-large');
 if (orbitCard) {
     const orbitImage = orbitCard.querySelector('.work-image');
