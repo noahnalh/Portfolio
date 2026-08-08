@@ -53,7 +53,7 @@ Menu Toggle: Opens and closes the mobile navigation menu.
 
 Live Demo
 
-To see a live version, visit: https://noahnalh.github.io/Portfolio/
+To see a live version, visit: https://portfolio-two-teal-74.vercel.app/
 
 License
 
