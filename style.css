@@ -433,36 +433,20 @@ h2 {
   transition: transform 0.5s;
   width: 100%;
 }
+.preview-link { display: block; height: 100%; }
+.orbit-preview { padding: 0; }
+.orbit-preview .preview-link img { object-fit: cover; object-position: center top; }
 .work-card-large .work-image {
   height: 610px;
 }
 .work-card:not(.work-card-large) .work-image {
   height: 235px;
 }
-.work-card:first-child .work-image img {
-  object-position: center top;
-}
 .work-card:nth-child(2) .work-image img {
   object-position: center 18%;
 }
 .work-card:nth-child(3) .work-image img {
   object-position: center 12%;
-}
-.orbit-preview {
-  background: #f7f8fb;
-  padding: 24px;
-}
-.orbit-shell {
-  background: #fff;
-  border: 1px solid #e4e7ed;
-  border-radius: 10px;
-  box-shadow: 0 20px 45px rgba(34, 42, 58, .14);
-  color: #566071;
-  display: grid;
-  font-family: 'Manrope', sans-serif;
-  grid-template-columns: 150px 1fr;
-  height: 100%;
-  overflow: hidden;
 }
 .orbit-shell aside {
   background: #f8f9fb;
@@ -505,6 +489,17 @@ h2 {
 .work-card:hover .work-image img {
   transform: scale(1.04);
 }
+.apex-card .work-image {
+  background: #ddd9ce;
+  padding: 0;
+}
+.apex-card .work-image img { filter: none; opacity: 1; object-fit: cover; object-position: center top; }
+.apex-card .work-image::before,
+.apex-card .work-image::after { content: none; }
+.apex-cover { background: #f7f5ef; border: 1px solid #d2cec3; box-shadow: 0 18px 35px rgba(34, 34, 28, .18); color: #20211e; height: 100%; overflow: hidden; padding: 13px 15px 0; position: relative; }
+.apex-cover-nav { align-items: center; display: flex; font-size: 6px; justify-content: space-between; }.apex-cover-nav strong { font-size: 9px; letter-spacing: -.05em; }.apex-cover-nav strong span { background: #20211e; color: #f7f5ef; display: inline-block; margin-right: 3px; padding: 4px; }.apex-cover-nav b { background: #20211e; color: #f7f5ef; font-size: 5px; font-weight: 500; padding: 6px 8px; }
+.apex-cover-hero { padding: 26px 0 19px; }.apex-cover-hero small, .apex-cover-stats small { color: #8a877e; font: 5px 'DM Mono', monospace; letter-spacing: .08em; }.apex-cover-hero h4 { font-size: clamp(15px, 2vw, 23px); letter-spacing: -.09em; line-height: .95; margin: 7px 0; }.apex-cover-hero p { color: #77766f; font-size: 6px; }.apex-cover-hero div { display: flex; gap: 6px; margin-top: 12px; }.apex-cover-hero i { background: #d5e758; font-size: 5px; font-style: normal; padding: 6px 8px; }.apex-cover-hero i + i { background: transparent; border: 1px solid #aaa79d; }
+.apex-cover-stats { background: #20211e; bottom: 0; color: #f7f5ef; display: grid; gap: 1px; grid-template-columns: repeat(3, 1fr); left: 0; padding: 12px 15px; position: absolute; right: 0; }.apex-cover-stats div { border-right: 1px solid #4b4c46; padding-left: 8px; }.apex-cover-stats div:first-child { padding-left: 0; }.apex-cover-stats div:last-child { border: 0; }.apex-cover-stats strong { display: block; font-size: 16px; letter-spacing: -.08em; margin-top: 5px; }.apex-card .work-index { z-index: 3; }
 .work-index {
   background: var(--paper);
   left: 14px;
